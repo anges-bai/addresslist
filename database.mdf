@@ -1,0 +1,30 @@
+create database addresslist1;
+use addresslist1;
+
+create table addresslist(
+  电话号码 varchar(20)  primary key,
+  姓名 varchar(20),
+  地址 varchar(30),
+  邮政编码 varchar(10),
+  家庭电话 varchar(20),
+  Email varchar(20)
+);
+insert into addresslist values('13992247755','小李','西安','718500',
+                               '40461111','1597374233');
+insert into addresslist values('13992247766','小C','长沙','718600',
+                               '40461112','1597374223');
+insert into addresslist values('13992247777','小溪','成都','718700',
+                               '40461113','1597374235');
+insert into addresslist values('13992247788','小战','重庆','718800',
+                               '40461115','1597374236');
+insert into addresslist values('13992247799','小然','平顶山','718900',
+                               '40461116','1597374237');
+insert into addresslist values('13992247700','小源','北京','718000',
+                               '40461117','1597374238');
+select 电话号码 from addresslist;
+select *from addresslist;
+select 姓名 from addresslist
+order by 姓名  DESC;
+select 电话号码 from addresslist
+order by 电话号码 ASC;
+
